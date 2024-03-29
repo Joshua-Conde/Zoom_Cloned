@@ -1,4 +1,4 @@
-import CallList from '@/components/CallList';
+import CallList from '@/components/CallList'
 
 const UpcomingPage = () => {
   return (
@@ -7,7 +7,7 @@ const UpcomingPage = () => {
 
       <CallList type="upcoming" />
     </section>
-  );
-};
+  )
+}
 
-export default UpcomingPage;
+export default UpcomingPage

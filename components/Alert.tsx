@@ -1,12 +1,12 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from 'next/link'
+import Image from 'next/image'
 
-import { Button } from './ui/button';
-import { Card, CardContent } from './ui/card';
+import { Button } from './ui/button'
+import { Card, CardContent } from './ui/card'
 
 interface PermissionCardProps {
-  title: string;
-  iconUrl?: string;
+  title: string
+  iconUrl?: string
 }
 
 const Alert = ({ title, iconUrl }: PermissionCardProps) => {
@@ -31,7 +31,7 @@ const Alert = ({ title, iconUrl }: PermissionCardProps) => {
         </CardContent>
       </Card>
     </section>
-  );
-};
+  )
+}
 
-export default Alert;
+export default Alert

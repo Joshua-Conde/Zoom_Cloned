@@ -1,15 +1,20 @@
-'use client';
+'use client'
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import Image from 'next/image'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { sidebarLinks } from '@/constants';
-import { cn } from '@/lib/utils';
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from '@/components/ui/sheet'
+import { sidebarLinks } from '@/constants'
+import { cn } from '@/lib/utils'
 
 const MobileNav = () => {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
     <section className="w-full max-w-[264px]">
@@ -37,7 +42,7 @@ const MobileNav = () => {
             <SheetClose asChild>
               <section className=" flex h-full flex-col gap-6 pt-16 text-white">
                 {sidebarLinks.map((item) => {
-                  const isActive = pathname === item.route;
+                  const isActive = pathname === item.route
 
                   return (
                     <SheetClose asChild key={item.route}>
@@ -48,7 +53,7 @@ const MobileNav = () => {
                           'flex gap-4 items-center p-4 rounded-lg w-full max-w-60',
                           {
                             'bg-blue-1': isActive,
-                          }
+                          },
                         )}
                       >
                         <Image
@@ -60,7 +65,7 @@ const MobileNav = () => {
                         <p className="font-semibold">{item.label}</p>
                       </Link>
                     </SheetClose>
-                  );
+                  )
                 })}
               </section>
             </SheetClose>
@@ -68,7 +73,7 @@ const MobileNav = () => {
         </SheetContent>
       </Sheet>
     </section>
-  );
-};
+  )
+}
 
-export default MobileNav;
+export default MobileNav

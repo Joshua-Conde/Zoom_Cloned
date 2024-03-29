@@ -1,4 +1,4 @@
-import CallList from '@/components/CallList';
+import CallList from '@/components/CallList'
 
 const PreviousPage = () => {
   return (
@@ -7,7 +7,7 @@ const PreviousPage = () => {
 
       <CallList type="recordings" />
     </section>
-  );
-};
+  )
+}
 
-export default PreviousPage;
+export default PreviousPage
